@@ -79,3 +79,127 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+/* Animatie 1 */
+a:first-child {
+  position: relative;
+  background: orange;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.shake {
+  animation-name: shake;
+  animation-timing-function: cubic-bezier(0.15, 0.67, 0.38, 1);
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  20% {
+    transform: scale(1.2) rotate(-5deg);
+  }
+  40% {
+    transform: scale(1.2) rotate(5deg);
+  }
+  60% {
+    transform: scale(1.2) rotate(-5deg);
+  }
+  80% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+
+/* Animatie 2 */
+a:nth-of-type(2) {
+  position: relative;
+  background: #fffc86;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.zoom {
+  animation-name: zoom;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
+/* Animatie 3 */
+a:nth-of-type(3) {
+  position: relative;
+  background: #66e5bf;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.rotation {
+  animation-name: rotation;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/* Animatie 4 */
+a:nth-of-type(4) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes bounce {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
