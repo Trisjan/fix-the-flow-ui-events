@@ -185,21 +185,90 @@ a:nth-of-type(4) {
 .bounce {
   animation-name: bounce;
   animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: 1;
 }
 
 @keyframes bounce {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1, 1) translateY(0);
   }
-  25% {
-    transform: rotate(360deg);
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-5rem)
   }
   50% {
-    transform: rotate(0deg);
+    transform: scale(1.05, 0.95) translateY(0);
   }
-  100%{
-    transform: rotate(360deg);
+  57% {
+    transform: scale(1, 1) translateY(-0.5rem)
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+/* Animatie 5 */
+a:nth-of-type(5) {
+  position: relative;
+  background: orange;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.colorchange {
+  animation-name: colorchange;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes colorchange {
+  25% {
+    background-color: #fffc86;
+  }
+  50% {
+    background-color: #66e5bf;
+  }
+  75% {
+    background-color: var(--highlight-secondary);
+  }
+  100% {
+    background-color: orange;
+  }
+}
+
+/* Animatie 6 */
+a:nth-of-type(6) {
+  position: relative;
+  background: #fffc86;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.swoosh {
+  animation-name: swoosh;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes swoosh {
+  20% {
+    transform: scale(1.5) translateX(-8rem) translateY(8rem);
+  }
+  40% {
+    transform: scale(3) translateX(0rem) translateY(8rem);
+  }
+  60% {
+    transform: scale(2) translateX(4rem) translateX(7rem);
+  }
+  80% {
+    transform: scale(1.4) translateX(0rem) translateX(0rem);
+  }
+  100% {
+    transform: scale(1);
   }
 }
