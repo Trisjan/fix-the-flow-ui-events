@@ -53,3 +53,11 @@ fix.addEventListener('animationend', swooshHandler)
 function swooshHandler() {
   fix.classList.toggle('swoosh')
 }
+
+// ZEVENDE ANIMATIE 
+let the = document.querySelector('a:nth-of-type(7)')
+the.addEventListener('click', elasticHandler)
+the.addEventListener('animationend', elasticHandler)
+function elasticHandler() {
+  the.classList.toggle('elastic')
+}

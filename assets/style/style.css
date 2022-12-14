@@ -56,25 +56,25 @@ a:nth-of-type(12) {
 
 @keyframes jump {
   0% {
-    transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1);
   }
   10% {
-    transform: scale(1.1, 0.9) translateY(0);
+    transform: scale(1.1, 0.9);
   }
   30% {
     transform: scale(0.9, 1.1) translateY(-5rem) rotate(10deg);
   }
   50% {
-    transform: scale(1.05, 0.95) translateY(0);
+    transform: scale(1.05, 0.95);
   }
   57% {
     transform: scale(1, 1) translateY(-0.5rem) rotate(-2deg);
   }
   64% {
-    transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1);
   }
   100% {
-    transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1);
   }
 }
 
@@ -191,22 +191,22 @@ a:nth-of-type(4) {
 
 @keyframes bounce {
   0% {
-    transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1);
   }
   10% {
-    transform: scale(1.1, 0.9) translateY(0);
+    transform: scale(1.1, 0.9);
   }
   30% {
     transform: scale(0.9, 1.1) translateY(-5rem)
   }
   50% {
-    transform: scale(1.05, 0.95) translateY(0);
+    transform: scale(1.05, 0.95);
   }
   57% {
     transform: scale(1, 1) translateY(-0.5rem)
   }
   100% {
-    transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1);
   }
 }
 
@@ -270,5 +270,41 @@ a:nth-of-type(6) {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+ /* Animatie 7 */
+a:nth-of-type(7) {
+  position: relative;
+  background: #66e5bf;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.elastic {
+  animation-name: elastic;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 0.7;
+  animation-iteration-count: 1;
+}
+
+@keyframes elastic {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(2, 0.5);
+  }
+  30% {
+    transform: scale(0.8, 1.7);
+  }
+  50% {
+    transform: scale(1.7, 0.8);
+  }
+  57% {
+    transform: scale(0.9, 1.3);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
