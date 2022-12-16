@@ -61,3 +61,4 @@ the.addEventListener('animationend', elasticHandler)
 function elasticHandler() {
   the.classList.toggle('elastic')
 }
+
