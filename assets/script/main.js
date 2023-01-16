@@ -62,3 +62,26 @@ function elasticHandler() {
   the.classList.toggle('elastic')
 }
 
+// ACHTSTE ANIMATIE 
+let flow = document.querySelector('a:nth-of-type(8)')
+flow.addEventListener('click', stretchHandler)
+flow.addEventListener('animationend', stretchHandler)
+function stretchHandler() {
+  flow.classList.toggle('stretch')
+}
+
+// NEGENDE ANIMATIE 
+let user = document.querySelector('a:nth-of-type(9)')
+user.addEventListener('click', disappearHandler)
+user.addEventListener('animationend', disappearHandler)
+function disappearHandler() {
+  user.classList.toggle('disappear')
+}
+
+// TIENDE ANIMATIE 
+let interface = document.querySelector('a:nth-of-type(10)')
+interface.addEventListener('click', sinkHandler)
+interface.addEventListener('animationend', sinkHandler)
+function sinkHandler() {
+  interface.classList.toggle('sink')
+}

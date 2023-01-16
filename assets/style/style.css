@@ -284,7 +284,7 @@ a:nth-of-type(7) {
 .elastic {
   animation-name: elastic;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation-duration: 0.7;
+  animation-duration: 0.7s;
   animation-iteration-count: 1;
 }
 
@@ -309,3 +309,84 @@ a:nth-of-type(7) {
   }
 }
 
+a:nth-of-type(8) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.stretch {
+  animation-name: stretch;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(5, 1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+a:nth-of-type(9) {
+  position: relative;
+  background: orange;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.disappear {
+  animation-name: disappear;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+a:nth-of-type(10) {
+  position: relative;
+  background: #fffc86;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.sink {
+  animation-name: sink;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes sink {
+  0% {
+    transform: translateY(0rem) rotate(0deg);
+  }
+  50% {
+    transform: translateY(5rem) rotate(10deg);
+  }
+  100% {
+    transform: translateY(10rem) rotate(-5deg);
+  }
+}
